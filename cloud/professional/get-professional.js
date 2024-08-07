@@ -1,8 +1,6 @@
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 
-
-
-const { formatProfessional } = require("./format-professional");
+const { professionalMapper } = require("../mappers/professional-mapper");
 
 const Professional = Parse.Object.extend("Professional");
 const Specialty = Parse.Object.extend("Specialty");
@@ -32,7 +30,7 @@ Parse.Cloud.define("v1-get-professionals", async (request) => {
 
 	const results = await query.find({ useMasterKey: true });
 
-	return results.map((data) => formatProfessional(data.toJSON()));
+	return results.map((data) => professionalMapper(data.toJSON()));
 }, {
 	fields: {}
 });
