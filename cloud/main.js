@@ -4,3 +4,4 @@ require("./professional/get-professional");
 require("./users/logging-in");
 require("./users/get-user");
 require("./users/signing-up");
+require("./schedule/schedule-slots");
