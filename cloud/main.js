@@ -5,3 +5,4 @@ require("./users/logging-in");
 require("./users/get-user");
 require("./users/signing-up");
 require("./schedule/schedule-slots");
+require("./schedule/schedule-services");
