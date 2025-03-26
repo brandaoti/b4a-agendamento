@@ -1,6 +1,8 @@
-
 // Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-Parse.Cloud.define("hello", (request) => {
-	return "Hello world!";
-});
+
+require("./professional/get-professional");
+require("./users/logging-in");
+require("./users/get-user");
+require("./users/signing-up");
+require("./schedule/schedule-slots");
+require("./schedule/schedule-services");
